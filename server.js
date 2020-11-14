@@ -1,16 +1,3 @@
-//edited package.json to include the following:
-//	"scripts":
-//	{
-//		"start": "node server.js",
-//		"dev": "nodemon server.js"
-//	}
-//this allows one to run as dev which will auto reload all js when changed (by utilizing nodemon which was also added as a package)
-//
-//To run in dev environment:
-//					npm run dev
-//To run as regular:
-//					npm run start
-
 var express = require("express");
 const app = express();
 var path = require("path");
