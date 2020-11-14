@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+	<head>
+		<title>StarChat for Starfleet</title>
+		<meta charset="UTF-8"><!-- needed for emojis -->
+		<meta name="viewport" content="width=960, initial-scale=1"> <!-- for "reactive" website -->
+		<link rel="stylesheet" href="style2.css" type="text/css">
+	</head>
+	<body>
+		<div class="grid-container">
+			<div class="item0">
+				<h1 style="font-family: 'Starfleet BdEx BT'; font-size: 3vh; display: contents; font-weight: bold; font-style: normal;">ST</h1><h1 style="font-family: 'TrekArrowheads'; font-size: 3vh; font-weight: normal; font-style: normal;">B</h1><h1 style="font-family: 'Starfleet BdEx BT'; font-size: 3vh; display: contents; font-weight: bold; font-style: normal;">RCH</h1><h1 style="font-family: 'TrekArrowheads'; font-size: 3vh; font-weight: normal; font-style: normal;">B</h1><h1 style="font-family: 'Starfleet BdEx BT'; font-size: 3vh; display: contents; font-weight: bold; font-style: normal;">T</h1>
+				<ul id="user"></ul>
+			</div>
+
+			<div class="item1">
+				<ul id="messages"></ul>
+			</div>
+
+			<div class="item2">
+				<p style="color:white; font-size: 2vh;"><bold>Users</bold><p>
+				<ul id="userList"></ul>
+			</div>
+
+			<div class="item3">
+				<form action="">
+					<input id="m" autocomplete="off"/><button onmouseover = "playSoundDown()" onmouseDown = "playSoundUp()">Transmit</button>
+				</form>
+			</div>
+		</div>
+		
+		<script src="/socket.io/socket.io.js"></script> <!-- local version -->
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> <!-- web version -->
+		<script src="js.cookie.js"></script> <!-- local version -->
+		<script src="client.js"></script> <!-- my code -->
+	</body>
+</html>
