@@ -37,7 +37,7 @@ $(function ()
 		else if(userInput.substring(0,6) === "/color" && userInput.length == 13)
 		{
 			//major help from: https://www.w3resource.com/javascript/form/all-numbers.php#:~:text=size%3A%2010pt%3B%20%7D-,To%20check%20for%20all%20numbers%20in%20a%20field,expression%20against%20the%20input%20value.
-			var numbers = /^[0-9]+$/;
+			var numbers = /^[0-9ABCDEFabcdef]+$/;
 			
 			if(userInput.substring(7,13).match(numbers))
 			{
